@@ -1,0 +1,6 @@
+#!/bin/bash
+export DISPLAY=:1.0
+startx -- -nocursor &
+python3 haikugui.py &
+python3 00_core.py
+# unclutter -idle 0.01 -root &
